@@ -1,50 +1,36 @@
-# Welcome to your Expo app 👋
+# App Assets
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile app built with Expo and React Native that bundles several small games and their assets.
 
-## Get started
+## Games
 
-1. Install dependencies
+- **8 Ball:** a game with a home screen, play and searching screens, stakes, settings, and tutorials. Assets are in `app/8ball/`.
+- **Tic-Tac-Toe (TTT):** a game with a home screen, settings modal, and player components. Integration notes are in:
+  - [TTT_INTEGRATION_GUIDE.md](TTT_INTEGRATION_GUIDE.md)
+  - [TTT_INTEGRATION_CHECKLIST.md](TTT_INTEGRATION_CHECKLIST.md)
+  - [TTT_UI_IMPROVEMENTS.md](TTT_UI_IMPROVEMENTS.md)
 
-   ```bash
-   npm install
-   ```
+## Tech stack
 
-2. Start the app
+- Expo and React Native
+- Expo Router for navigation
+- Supabase for the backend
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Getting started
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Then open the app in Expo Go, an Android emulator, or an iOS simulator.
 
-## Learn more
+## Scripts
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+| Command | Description |
+| --- | --- |
+| `npm start` | Start the Expo development server |
+| `npm run android` | Open the app on Android |
+| `npm run ios` | Open the app on iOS |
+| `npm run web` | Open the app in the browser |
+| `npm run lint` | Run ESLint |
